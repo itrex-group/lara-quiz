@@ -101,12 +101,12 @@ trait RespondentTrait
      * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
      */
     abstract public function belongsToMany(
-        string $related,
-        ?string $table = null,
-        ?string $foreignPivotKey = null,
-        ?string $relatedPivotKey = null,
-        ?string $parentKey = null,
-        ?string $relatedKey = null,
-        ?string $relation = null
+        $related,
+        $table = null,
+        $foreignPivotKey = null,
+        $relatedPivotKey = null,
+        $parentKey = null,
+        $relatedKey = null,
+        $relation = null
     );
 }
