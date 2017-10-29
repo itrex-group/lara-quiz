@@ -1,0 +1,49 @@
+{
+  "name": "itrex-group/lara-quiz",
+  "description": "Laravel package to create forms: surveys, exams, etc.",
+  "keywords": [
+    "poll",
+    "quiz",
+    "exam",
+    "test",
+    "survey",
+    "form",
+    "Laravel"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sergey Rud",
+      "email": "sergey.rud@itrexgroup.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.1",
+    "itrex-group/quiz-runner": "dev-master",
+    "illuminate/support": "^5.5",
+    "illuminate/routing": "^5.5",
+    "illuminate/validation": "^5.5",
+    "illuminate/database": "^5.5",
+    "illuminate/view": "^5.5",
+    "illuminate/config": "^5.5",
+    "illuminate/auth": "^5.5"
+  },
+  "require-dev": {
+    "jakub-onderka/php-parallel-lint": "^0.9.2",
+    "phpmd/phpmd": "^2.6",
+    "sebastian/phpcpd": "^3.0",
+    "slevomat/coding-standard": "~4.0",
+    "squizlabs/php_codesniffer": "^3.1"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/itrex-group/quiz-runner"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "LaraQuiz\\": "src/LaraQuiz/"
+    }
+  }
+}
