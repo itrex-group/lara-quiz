@@ -4,7 +4,6 @@ declare(strict_types=1);
 namespace LaraQuiz\Models;
 
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use QuizRunner\Contracts\Surveys\Survey;
 
 /**
  * @property int $id
