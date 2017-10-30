@@ -46,7 +46,7 @@ class SurveysController extends BaseFrontController
             return $this->respondForbidden('You are not allowed to play this Survey');
         }
 
-        $transformer->with(['questions'])->setQuestionTransformerManager($questionManager);
+        $transformer->with(['questions'])->setQuestionManager($questionManager);
 
         // TODO: should we continue previous session? If yes, load answers that have been added so far.
         $session = $this->startSession($respondent, $survey);
