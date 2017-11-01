@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace LaraQuiz\Exceptions;
 
 use Illuminate\Validation\ValidationException;
+use Illuminate\Validation\Validator;
 use LaraQuiz\Helpers\Api;
 
 /**
@@ -15,9 +16,9 @@ class CustomValidationException extends ValidationException
 {
     /**
      * @param \Illuminate\Validation\Validator $validator
-     * @param \Illuminate\Http\Response $response
+     * @param \Illuminate\Http\Response|\Illuminate\Http\JsonResponse|null $response
      */
-    public function __construct(\Illuminate\Validation\Validator $validator, ?\Illuminate\Http\Response $response = null)
+    public function __construct(Validator $validator, $response = null)
     {
         if ($response === null) {
             $response = Api::respondBadRequest($validator->errors()->all());
