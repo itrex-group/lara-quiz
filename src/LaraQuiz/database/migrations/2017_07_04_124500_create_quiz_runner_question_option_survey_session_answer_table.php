@@ -50,6 +50,7 @@ class CreateQuizRunnerQuestionOptionSurveySessionAnswerTable extends Migration
 
             $table->unsignedInteger('survey_session_answer_id');
             $table->unsignedInteger('question_option_id');
+            $table->text('text')->nullable();
 
             $table->primary(['survey_session_answer_id', 'question_option_id'], 'session_answer_question_option_primary');
 
