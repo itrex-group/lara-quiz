@@ -917,12 +917,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/itrex-group/quiz-runner.git",
-                "reference": "98783c24676a1058d863f3f7c0a61ba27dffac52"
+                "reference": "31bf02aacacdd6aaadf21b58851c330e0c8b05f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/itrex-group/quiz-runner/zipball/98783c24676a1058d863f3f7c0a61ba27dffac52",
-                "reference": "98783c24676a1058d863f3f7c0a61ba27dffac52",
+                "url": "https://api.github.com/repos/itrex-group/quiz-runner/zipball/31bf02aacacdd6aaadf21b58851c330e0c8b05f5",
+                "reference": "31bf02aacacdd6aaadf21b58851c330e0c8b05f5",
                 "shasum": ""
             },
             "require": {
@@ -963,7 +963,7 @@
                 "source": "https://github.com/itrex-group/quiz-runner/tree/master",
                 "issues": "https://github.com/itrex-group/quiz-runner/issues"
             },
-            "time": "2017-11-08T08:24:55+00:00"
+            "time": "2017-11-08T10:16:25+00:00"
         },
         {
             "name": "nesbot/carbon",
