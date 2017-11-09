@@ -161,6 +161,6 @@ class SurveySessionAnswer extends BaseModel implements Answer, TextAnswer, Singl
             $config->get('laraQuiz.tableQuestionOptionSurveySessionAnswer'),
             'survey_session_answer_id',
             'question_option_id'
-        );
+        )->withPivot('text');
     }
 }
